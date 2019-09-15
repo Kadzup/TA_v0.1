@@ -51,5 +51,4 @@ public class Worker {
         phone = "+38(05)08-83-4011";
     }
 
-
 }
