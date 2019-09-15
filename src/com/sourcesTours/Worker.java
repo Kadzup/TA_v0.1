@@ -1,41 +1,43 @@
+package com.sourcesTours;
+
 import java.io.*;
 import java.lang.*;
 import java.util.*;
 
 public class Worker {
     /**
-     * First name of Worker
+     * First name of com.sourcesTours.Worker
      * */
     private static String f_name;
     /**
-     * Second name of Worker
+     * Second name of com.sourcesTours.Worker
      * */
     private static String s_name;
     /**
-     * Birth date of Worker
+     * Birth date of com.sourcesTours.Worker
      * */
     private static Date b_day;
 
     /**
-     * Information about Worker Salary
+     * Information about com.sourcesTours.Worker Salary
      * */
     private static float salary;
     /**
-     * Information about Worker Position
+     * Information about com.sourcesTours.Worker Position
      * */
     private static String position;
 
     /**
-     * Information about Worker Address
+     * Information about com.sourcesTours.Worker Address
      * */
     private static  String address;
     /**
-     * Information about Worker Phone
+     * Information about com.sourcesTours.Worker Phone
      * */
     private static  String phone;
 
     /**
-     * Basic constructor of Worker object
+     * Basic constructor of com.sourcesTours.Worker object
      * */
     Worker(){
         f_name = "John";
@@ -48,4 +50,6 @@ public class Worker {
         address = "Test Hometown";
         phone = "+38(05)08-83-4011";
     }
+
+
 }

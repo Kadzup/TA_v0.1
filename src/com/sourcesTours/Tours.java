@@ -1,6 +1,8 @@
-import java.io.*;
+package com.sourcesTours;
+
+import com.sourcesTours.Worker;
+
 import java.lang.*;
-import java.util.*;
 
 /**
  * <h1>Welcome to TA!</h1>
@@ -172,7 +174,7 @@ public class Tours {
         return this.excursion;
     }
     /**
-     * @return Object of Worker, which contain owner information
+     * @return Object of com.sourcesTours.Worker, which contain owner information
      * */
     public Worker getOwner(){
         return this.owner;
