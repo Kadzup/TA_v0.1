@@ -8,5 +8,9 @@ public class Location {
     private static float rating;
     private static String address;
     private static String phone;
-    private static Boolean availbale;
+    private static Boolean available;
+
+    public static String buildLocation(){
+        return this->name+", "+this->rating+", "+this->address+", "+this->phone+", "+this->available;
+    }
 }
