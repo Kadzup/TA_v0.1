@@ -1,7 +1,3 @@
-package com.sourcesTours;
-
-import com.sourcesTours.Worker;
-
 import java.lang.*;
 
 /**
@@ -174,7 +170,7 @@ public class Tours {
         return this.excursion;
     }
     /**
-     * @return Object of com.sourcesTours.Worker, which contain owner information
+     * @return Object of Worker, which contain owner information
      * */
     public Worker getOwner(){
         return this.owner;

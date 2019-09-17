@@ -1,43 +1,41 @@
-package com.sourcesTours;
-
 import java.io.*;
 import java.lang.*;
 import java.util.*;
 
 public class Worker {
     /**
-     * First name of com.sourcesTours.Worker
+     * First name of Worker
      * */
     private static String f_name;
     /**
-     * Second name of com.sourcesTours.Worker
+     * Second name of Worker
      * */
     private static String s_name;
     /**
-     * Birth date of com.sourcesTours.Worker
+     * Birth date of Worker
      * */
     private static Date b_day;
 
     /**
-     * Information about com.sourcesTours.Worker Salary
+     * Information about Worker Salary
      * */
     private static float salary;
     /**
-     * Information about com.sourcesTours.Worker Position
+     * Information about Worker Position
      * */
     private static String position;
 
     /**
-     * Information about com.sourcesTours.Worker Address
+     * Information about Worker Address
      * */
     private static  String address;
     /**
-     * Information about com.sourcesTours.Worker Phone
+     * Information about Worker Phone
      * */
     private static  String phone;
 
     /**
-     * Basic constructor of com.sourcesTours.Worker object
+     * Basic constructor of Worker object
      * */
     Worker(){
         f_name = "John";
