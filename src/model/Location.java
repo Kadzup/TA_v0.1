@@ -1,4 +1,6 @@
 package model;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.io.*;
 import java.lang.*;
 import java.util.*;
@@ -20,7 +22,60 @@ public class Location {
         available = false;
     }
 
-    public static String buildLocation(){
-        return(name+", "+rating+", "+address+", "+phone+", "+available);
+    /**
+     * GETTER / SETTER
+     */
+
+    public Country getCountry(){
+        return country;
     }
+    public String getName(){
+        return name;
+    }
+    public float getRating(){
+        return rating;
+    }
+    public String getAddress(){
+        return address;
+    }
+    public String getPhone(){
+        return phone;
+    }
+    public  Boolean isAvailable(){
+        return available;
+    }
+
+    public void setCountry(Country _Country){
+        country = _Country;
+    }
+    public void setName(String Name){
+        name = Name;
+    }
+    public void setRating(float Rating){
+        rating = Rating;
+    }
+    public void setAddress(String Address){
+        address = Address;
+    }
+    public void  setPhone(String Phone){
+        phone = Phone;
+    }
+    public void setAvailable(Boolean Available){
+        available = Available;
+    }
+
+
+    public String getLocation(){
+        return (country.getCountry() + ", " + name);
+    }
+    public String getInfo(){
+        return (
+                "Name: " + name +
+                "\nAddress: " + country.getCountry() + ", " + address +
+                "\nStatus (Available): " + available +
+                "\nRating: " + rating + " stars" +
+                "\nPhone: " + phone
+                );
+    }
+
 }
