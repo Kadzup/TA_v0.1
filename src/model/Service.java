@@ -1,5 +1,8 @@
+package model;
 import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-public class Service {}
+public class Service {
+
+}

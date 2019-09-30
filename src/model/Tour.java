@@ -1,3 +1,4 @@
+package model;
 import java.lang.*;
 
 /**
@@ -12,7 +13,7 @@ import java.lang.*;
  * @author <a href="https://github.com/Kadzup"><b><u>Kadzup</u></b></a>
  * @since <b>15.09.2019</b>
  * */
-public class Tours {
+public class Tour {
     /**
      * Information about Company name
      * */
@@ -75,7 +76,7 @@ public class Tours {
     /**
      * Basic Constructor of Tour object
      * */
-    Tours(){
+    Tour(){
         companyName = "Test CO";
 
         price = 0.0f;

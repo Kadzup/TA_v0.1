@@ -1,20 +1,22 @@
+package model;
 import java.io.*;
 import java.lang.*;
 import java.util.*;
+import java.time.*;
 
 public class Worker {
     /**
      * First name of Worker
      * */
-    private static String f_name;
+    private static String fName;
     /**
      * Second name of Worker
      * */
-    private static String s_name;
+    private static String sName;
     /**
      * Birth date of Worker
      * */
-    private static Date b_day;
+    private static LocalDate bDay;
 
     /**
      * Information about Worker Salary
@@ -38,9 +40,9 @@ public class Worker {
      * Basic constructor of Worker object
      * */
     Worker(){
-        f_name = "John";
-        s_name = "Doe";
-        b_day = new Date(1999,11,12);
+        fName = "John";
+        sName = "Doe";
+        bDay = LocalDate.of(1999,11,12);
 
         salary = 0.0f;
         position = "Tester";
