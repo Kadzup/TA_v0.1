@@ -13,4 +13,11 @@ public class Location {
     public static String buildLocation(){
         return this->name+", "+this->rating+", "+this->address+", "+this->phone+", "+this->available;
     }
+    Location(){
+        name = "none";
+        rating = 0.0f;
+        address = "none st."
+        phone = "none";
+        available = false;
+    }
 }
