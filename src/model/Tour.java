@@ -18,7 +18,6 @@ public class Tour {
      * Information about Company name
      * */
     private static String companyName;
-
     /**
      * Information about Tour price
      * */
@@ -31,16 +30,14 @@ public class Tour {
      * Information about Tour Owner
      * */
     private static Worker owner;
-
     /**
      * Id of connected Service
      * */
-    private static int service_id;
+    private static Service service;
     /**
      * Id of connected Location
      * */
-    private static int location_id;
-
+    private static Location location;
     /**
      * Information about transport
      * */
@@ -49,7 +46,6 @@ public class Tour {
      * Information about Visa Services accessibility
      * */
     private static Boolean visa_service;
-
     /**
      * Information about Accommodation accessibility
      * */
@@ -58,7 +54,6 @@ public class Tour {
      * Information about Accommodation type
      * */
     private static String accommodation_type;
-
     /**
      *  Information about Food accessibility
      * */
@@ -67,11 +62,12 @@ public class Tour {
      *  Information about Food type
      * */
     private static String food_type;
-
     /**
      * Information about Excursion accessibility
      * */
     private static Boolean excursion;
+
+
 
     /**
      * Basic Constructor of Tour object
@@ -83,17 +79,17 @@ public class Tour {
         taxes = 0.0f;
         owner = new Worker();
 
-        service_id = 0;
-        location_id = 0;
+        service = new Service();
+        location = new Location();
 
-        transport = "none";
+        transport = "New Transport";
         visa_service = false;
 
         accommodation = false;
-        accommodation_type = "none";
+        accommodation_type = "Basic";
 
         food = false;
-        food_type = "none";
+        food_type = "Basic";
 
         excursion = false;
     }
@@ -119,14 +115,14 @@ public class Tour {
     /**
      * @return Id of service that gives that tour
      * */
-    public int getService_id(){
-        return this.service_id;
+    public Service getService(){
+        return service;
     }
     /**
      * @return Id of location where tour located
      * */
-    public int getLocation_id(){
-        return this.location_id;
+    public Location getLocation(){
+        return location;
     }
     /**
      * @return Information about transport
@@ -175,5 +171,65 @@ public class Tour {
      * */
     public Worker getOwner(){
         return this.owner;
+    }
+
+
+    public void setCompanyName(String Company){
+        companyName = Company;
+    }
+    public void setPrice(float _price){
+        price = _price;
+    }
+    public void setTaxes(float _taxes){
+        taxes = _taxes;
+    }
+    public void setOwner(Worker _owner){
+        owner = _owner;
+    }
+    public void setService(Service _service){
+        service = _service;
+    }
+    public void setLocation(Location _location){
+        location = _location;
+    }
+    public void setTransport(String _transport){
+        transport = _transport;
+    }
+    public void setVisa_service(Boolean _visa_service){
+        visa_service = _visa_service;
+    }
+    public void setAccommodation(Boolean _accommodation){
+        accommodation = _accommodation;
+    }
+    public void setAccommodation_type(String _accommodation_type){
+        accommodation_type = _accommodation_type;
+    }
+    public void setFood(Boolean _food){
+        food = _food;
+    }
+    public void setFood_type(String _food_type){
+        food_type = _food_type;
+    }
+    public void setExcursion(Boolean _excursion){
+        excursion = _excursion;
+    }
+
+
+    public float calcPrice(){
+        if(price+service.getPrice()-taxes > 0) {
+            price += service.getPrice() - taxes;
+            return price;
+        }
+        else{
+            return -1;
+        }
+    }
+
+    public  String getContact(){
+        return (
+                "Contact name: " + getOwner().getFullName() +
+                "\nAddress: " + getLocation().getFullAddress() +
+                "\nContact phone: " + getOwner().getPhone() + ", " + getLocation().getPhone()
+                );
     }
 }

@@ -68,6 +68,9 @@ public class Location {
     public String getLocation(){
         return (country.getCountry() + ", " + name);
     }
+    public String getFullAddress(){
+        return(country.getCountry() + ", " + address + ", " + name);
+    }
     public String getInfo(){
         return (
                 "Name: " + name +

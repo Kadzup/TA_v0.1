@@ -125,4 +125,7 @@ public class Worker {
                 "\nContact Phone: " + phone
         );
     }
+    public String getFullName(){
+        return (getFirstName() + " " + getLastName());
+    }
 }
