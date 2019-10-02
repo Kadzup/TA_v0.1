@@ -6,12 +6,12 @@ import java.util.*;
 import java.time.*;
 
 public class Order {
-    public static LocalDate departure;
-    public static LocalDate arrival;
+    private static LocalDate departure;
+    private static LocalDate arrival;
 
-    public static Client client;
-    public static Tour tour;
-    public static float price;
+    private static Client client;
+    private static Tour tour;
+    private static float price;
 
     /**
      *  GETTERS / SETTERS begin

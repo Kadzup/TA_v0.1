@@ -66,18 +66,18 @@ public class Location {
 
 
     public String getLocation(){
-        return (country.getCountry() + ", " + name);
+        return (getCountry().getCountry() + ", " + getName());
     }
     public String getFullAddress(){
-        return(country.getCountry() + ", " + address + ", " + name);
+        return(getCountry().getCountry() + ", " + getAddress() + ", " + getName());
     }
     public String getInfo(){
         return (
-                "Name: " + name +
-                "\nAddress: " + country.getCountry() + ", " + address +
-                "\nStatus (Available): " + available +
-                "\nRating: " + rating + " stars" +
-                "\nPhone: " + phone
+                "Name: " + getName() +
+                "\nAddress: " + getCountry().getCountry() + ", " + getAddress() +
+                "\nStatus (Available): " + isAvailable() +
+                "\nRating: " + getRating() + " stars" +
+                "\nPhone: " + getPhone()
                 );
     }
 

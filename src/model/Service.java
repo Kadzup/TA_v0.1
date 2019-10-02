@@ -4,10 +4,10 @@ import java.lang.*;
 import java.util.*;
 
 public class Service {
-    public String name;
-    public double price;
-    public String providerCompany;
-    public boolean riskCover;
+    private String name;
+    private double price;
+    private String providerCompany;
+    private boolean riskCover;
 
     Service(){
         name = "New Service";

@@ -6,15 +6,15 @@ import java.util.*;
 import java.time.*;
 
 public class Client {
-    public static String fName;
-    public static String lName;
+    private static String fName;
+    private static String lName;
 
-    public static LocalDate bDay;
+    private static LocalDate bDay;
 
-    public static String paymentInfo;
+    private static String paymentInfo;
 
-    public static String phone;
-    public static String email;
+    private static String phone;
+    private static String email;
 
 
     Client(){

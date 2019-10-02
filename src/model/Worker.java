@@ -111,18 +111,18 @@ public class Worker {
     }
     public String getInfo(){
         return(
-                "First Name: " + fName +
-                "\nLast Name:" + lName +
-                "\nBirth Day: " + bDay +
-                "\nPosition: " + position +
-                "\nSalary: " + salary
+                "First Name: " + getFirstName() +
+                "\nLast Name:" + getLastName() +
+                "\nBirth Day: " + getBirthDay() +
+                "\nPosition: " + getPosition() +
+                "\nSalary: " + getSalary()
         );
     }
 
     public String howToFind(){
         return (
-                "Location: " + address+
-                "\nContact Phone: " + phone
+                "Location: " + getAddress()+
+                "\nContact Phone: " + getPhone()
         );
     }
     public String getFullName(){

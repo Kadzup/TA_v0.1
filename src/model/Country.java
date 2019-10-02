@@ -4,10 +4,10 @@ import java.lang.*;
 import java.util.*;
 
 public class Country {
-    public static String name;
-    public static long population;
-    public static double area;
-    public static String capital;
+    private static String name;
+    private static long population;
+    private static double area;
+    private static String capital;
 
     Country(){
         name = "CountryName";
@@ -50,13 +50,13 @@ public class Country {
 
     public String getInfo(){
         return (
-                "Name: " + name +
-                ", Capital: " + capital +
-                "\nArea: " + area +
-                "\nPopulation: " + population
+                "Name: " + getName() +
+                ", Capital: " + getCapital() +
+                "\nArea: " + getArea() +
+                "\nPopulation: " + getPopulation()
                 );
     }
     public String getCountry(){
-        return (name+", "+capital);
+        return (getName()+", "+getCapital());
     }
 }

@@ -216,9 +216,8 @@ public class Tour {
 
 
     public float calcPrice(){
-        if(price+service.getPrice()-taxes > 0) {
-            price += service.getPrice() - taxes;
-            return price;
+        if(getPrice()+getService().getPrice()-getTaxes() > 0) {
+            return (float)(getPrice() + getService().getPrice() - getTaxes());
         }
         else{
             return -1;
@@ -261,7 +260,7 @@ public class Tour {
         else {
             result += "No";
         }
-        result+="\n\nAdditional service: " + getService().name+
+        result+="\n\nAdditional service: " + getService().getName()+
                 "\n\nVisa services: ";
         if(getVisa_service()){
             result+="Yes";
