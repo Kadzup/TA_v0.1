@@ -59,5 +59,21 @@ public class Order {
      *  GETTERS / SETTERS end
      */
 
+    public boolean checkTour(){
+        return getTour().getLocation().isAvailable();
+    }
+
+    public String orderTour(){
+        if(!checkTour())
+            return "Not available";
+        String result = "";
+        setPrice(getTour().calcPrice());
+
+        result = getTour().getInfo(getClient());
+        result +=   "\n\nDeparture date: "+ getDeparture()+
+                    "\nArrival date: " + getArrival();
+
+        return result;
+    }
 }
 

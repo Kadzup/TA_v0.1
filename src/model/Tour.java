@@ -232,4 +232,46 @@ public class Tour {
                 "\nContact phone: " + getOwner().getPhone() + ", " + getLocation().getPhone()
                 );
     }
+
+    public String getInfo(Client client){
+        String result = "";
+        result =    "Company: " + getCompanyName() +
+                    "\nPerson: "+ client.getFullName() +
+                    "\n\nLocation: " + getLocation().getName() +
+                    "\nAddress: " + getLocation().getFullAddress() +
+                    "\nTransport: " + getTransport() +
+                    "\nFood: ";
+        if(getFood()){
+            result += "Yes, " + getFood_type();
+        }
+        else{
+            result += "No";
+        }
+        result += "\nAccommodation: ";
+        if(getAccommodation()){
+            result+= "Yes, "+ getAccommodation_type();
+        }
+        else{
+            result += "No";
+        }
+        result += "\nExcursion: ";
+        if(getExcursion()){
+            result += "Yes";
+        }
+        else {
+            result += "No";
+        }
+        result+="\n\nAdditional service: " + getService().name+
+                "\n\nVisa services: ";
+        if(getVisa_service()){
+            result+="Yes";
+        }
+        else{
+            result+="No";
+        }
+        result+="\nPrice: " + getPrice() +" + " + getService().getPrice()+ "for service"+
+                "\nTaxes: " + getTaxes()+
+                "\nTotal: " + calcPrice();
+        return result;
+    }
 }
