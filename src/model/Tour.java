@@ -17,55 +17,55 @@ public class Tour {
     /**
      * Information about Company name
      * */
-    private static String companyName;
+    private String companyName;
     /**
      * Information about Tour price
      * */
-    private static float price;
+    private float price;
     /**
      * Information about Company Taxes
      * */
-    private static float taxes;
+    private float taxes;
     /**
      * Information about Tour Owner
      * */
-    private static Worker owner;
+    private Worker owner;
     /**
      * Id of connected Service
      * */
-    private static Service service;
+    private Service service;
     /**
      * Id of connected Location
      * */
-    private static Location location;
+    private Location location;
     /**
      * Information about transport
      * */
-    private static String transport;
+    private String transport;
     /**
      * Information about Visa Services accessibility
      * */
-    private static Boolean visa_service;
+    private Boolean visa_service;
     /**
      * Information about Accommodation accessibility
      * */
-    private static Boolean accommodation;
+    private Boolean accommodation;
     /**
      * Information about Accommodation type
      * */
-    private static String accommodation_type;
+    private String accommodation_type;
     /**
      *  Information about Food accessibility
      * */
-    private static Boolean food;
+    private Boolean food;
     /**
      *  Information about Food type
      * */
-    private static String food_type;
+    private String food_type;
     /**
      * Information about Excursion accessibility
      * */
-    private static Boolean excursion;
+    private Boolean excursion;
 
 
 
@@ -224,7 +224,7 @@ public class Tour {
         }
     }
 
-    public  String getContact(){
+    public String getContact(){
         return (
                 "Contact name: " + getOwner().getFullName() +
                 "\nAddress: " + getLocation().getFullAddress() +
