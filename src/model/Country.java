@@ -4,16 +4,23 @@ import java.lang.*;
 import java.util.*;
 
 public class Country {
-    private static String name;
-    private static long population;
-    private static double area;
-    private static String capital;
+    private String name;
+    private long population;
+    private double area;
+    private String capital;
 
     Country(){
         name = "CountryName";
         population = 100000;
         area = 767676;
         capital = "Capital City";
+    }
+
+    public Country(String name, long population, double area, String capital) {
+        this.name = name;
+        this.population = population;
+        this.area = area;
+        this.capital = capital;
     }
 
     /**
@@ -33,19 +40,6 @@ public class Country {
         return capital;
     }
 
-    public void setName(String Name){
-        name = Name;
-    }
-    public void setPopulation(long Population){
-        population = Population;
-    }
-    public void setArea(double Area){
-        area = Area;
-    }
-    public void setCapital(String Capital){
-        capital = Capital;
-    }
-
 
 
     public String getInfo(){
@@ -58,5 +52,43 @@ public class Country {
     }
     public String getCountry(){
         return (getName()+", "+getCapital());
+    }
+
+    public static final class Builder {
+        private String name;
+        private long population;
+        private double area;
+        private String capital;
+
+        public Builder() {
+        }
+
+        public static Builder aCountry() {
+            return new Builder();
+        }
+
+        public Builder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder setPopulation(long population) {
+            this.population = population;
+            return this;
+        }
+
+        public Builder setArea(double area) {
+            this.area = area;
+            return this;
+        }
+
+        public Builder setCapital(String capital) {
+            this.capital = capital;
+            return this;
+        }
+
+        public Country build() {
+            return new Country(name, population, area, capital);
+        }
     }
 }

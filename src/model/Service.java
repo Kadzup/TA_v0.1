@@ -16,6 +16,13 @@ public class Service {
         riskCover = false;
     }
 
+    public Service(String name, double price, String providerCompany, boolean riskCover) {
+        this.name = name;
+        this.price = price;
+        this.providerCompany = providerCompany;
+        this.riskCover = riskCover;
+    }
+
     /**
      * GETTER / SETTER
      */
@@ -33,16 +40,42 @@ public class Service {
         return riskCover;
     }
 
-    public void setName(String Name){
-        name = Name;
-    }
-    public void setPrice(double Price){
-        price = Price;
-    }
-    public void setProviderCompany(String Provider){
-        providerCompany = Provider;
-    }
-    public void setRiskCover(boolean Risk){
-        riskCover = Risk;
+
+    public static final class Builder {
+        private String name;
+        private double price;
+        private String providerCompany;
+        private boolean riskCover;
+
+        public Builder() {
+        }
+
+        public static Builder aService() {
+            return new Builder();
+        }
+
+        public Builder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder setPrice(double price) {
+            this.price = price;
+            return this;
+        }
+
+        public Builder setProviderCompany(String providerCompany) {
+            this.providerCompany = providerCompany;
+            return this;
+        }
+
+        public Builder setRiskCover(boolean riskCover) {
+            this.riskCover = riskCover;
+            return this;
+        }
+
+        public Service build() {
+            return new Service(name, price, providerCompany, riskCover);
+        }
     }
 }

@@ -1,54 +1,79 @@
 package model;
-import java.util.Scanner;
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import java.time.LocalDate;
 
-public class Interface {
-    Scanner scanner = new Scanner(System.in);
-    private Boolean status = false;
-    private String menuItems[] = {"Order Tour",
-                                  "Add new Worker",
-                                  "Find Client",
-                                  "Options",
-                                  "Setup all by one",
-                                  "Exit"};
-
-    // Display the menu
-    public void showMenu(){
-        for(int i=1; i<= menuItems.length-1; i++){
-            System.out.println(i+") " + menuItems[i]);
-        }
-    }
-
-    public void onExit(){
-        this.status = false;
-    }
-
-    public void runDialog(){
-        this.status = true;
-        showMenu();
-
-        while(status){
-            reader();
-        }
-    }
-
-    // Read line
-    public void reader(){
-        System.out.print(">>>\t");
-        unParseLine(scanner.next());
-    }
-
-    //unparse line from reader
-    private void unParseLine(String arg){
-        if(arg.){}
-        else if(arg.equals("5") || arg.equalsIgnoreCase("exit")){
-            this.onExit();
-        }
-
-    }
-
+public class Interface{
     public static void main(String args[]) {
-        Interface main = new Interface();
-        main.runDialog();
+
+        Client client = new Client.Builder()
+                .setBDay(LocalDate.now())
+                .setEmail("dstefurak@email.net")
+                .setFName("Dmytro")
+                .setLName("Stefurak")
+                .setPaymentInfo("0000-0000-0000-0000")
+                .setPhone("+380 5088 340 11")
+                .build();
+
+        Worker worker = new Worker.Builder()
+                .setAddress("some street")
+                .setBDay(LocalDate.now())
+                .setFName("Alex")
+                .setLName("Lusek")
+                .setPhone("+000 000 0000 00")
+                .setPosition("software engineer")
+                .setSalary(1500)
+                .build();
+
+        Country country = new Country.Builder()
+                .setArea(50000)
+                .setCapital("some capital")
+                .setName("Country")
+                .setPopulation(1000000)
+                .build();
+
+        Location location = new Location.Builder()
+                .setAddress("some street")
+                .setAvailable(true)
+                .setCountry(country)
+                .setName("some name")
+                .setPhone("+000 000 0000 00")
+                .setRating(5)
+                .build();
+
+        Service service = new Service.Builder()
+                .setName("some name")
+                .setPrice(1000)
+                .setProviderCompany("some company")
+                .setRiskCover(true)
+                .build();
+
+        Tour tour = new Tour.Builder()
+                .setAccommodation(true)
+                .setAccommodation_type("some type")
+                .setCompanyName("New company")
+                .setExcursion(true)
+                .setFood(true)
+                .setFood_type("some type")
+                .setLocation(location)
+                .setOwner(worker)
+                .setPrice(1000)
+                .setService(service)
+                .setTaxes(5)
+                .setTransport("some car")
+                .setVisa_service(true)
+                .build();
+
+        Order order = new Order.Builder()
+                .setArrival(LocalDate.now())
+                .setClient(client)
+                .setDeparture(LocalDate.now())
+                .setPrice(1000)
+                .setTour(tour)
+                .build();
+
+        System.out.println(order.orderTour());
+
+        System.out.println("\n" + location.getFullAddress());
+
+        System.out.println("\n" + client.getClientContact() + "\n\n" + client.getFullName());
     }
 }

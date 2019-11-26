@@ -94,6 +94,22 @@ public class Tour {
         excursion = false;
     }
 
+    public Tour(String companyName, float price, float taxes, Worker owner, Service service, Location location, String transport, Boolean visa_service, Boolean accommodation, String accommodation_type, Boolean food, String food_type, Boolean excursion) {
+        this.companyName = companyName;
+        this.price = price;
+        this.taxes = taxes;
+        this.owner = owner;
+        this.service = service;
+        this.location = location;
+        this.transport = transport;
+        this.visa_service = visa_service;
+        this.accommodation = accommodation;
+        this.accommodation_type = accommodation_type;
+        this.food = food;
+        this.food_type = food_type;
+        this.excursion = excursion;
+    }
+
     /**
      * @return Name of Company that sale the tour
      * */
@@ -174,66 +190,30 @@ public class Tour {
     }
 
 
-    public void setCompanyName(String Company){
-        companyName = Company;
-    }
-    public void setPrice(float _price){
-        price = _price;
-    }
-    public void setTaxes(float _taxes){
-        taxes = _taxes;
-    }
-    public void setOwner(Worker _owner){
-        owner = _owner;
-    }
-    public void setService(Service _service){
-        service = _service;
-    }
-    public void setLocation(Location _location){
-        location = _location;
-    }
-    public void setTransport(String _transport){
-        transport = _transport;
-    }
-    public void setVisa_service(Boolean _visa_service){
-        visa_service = _visa_service;
-    }
-    public void setAccommodation(Boolean _accommodation){
-        accommodation = _accommodation;
-    }
-    public void setAccommodation_type(String _accommodation_type){
-        accommodation_type = _accommodation_type;
-    }
-    public void setFood(Boolean _food){
-        food = _food;
-    }
-    public void setFood_type(String _food_type){
-        food_type = _food_type;
-    }
-    public void setExcursion(Boolean _excursion){
-        excursion = _excursion;
-    }
 
 
     public float calcPrice(){
-        if(getPrice()+getService().getPrice()-getTaxes() > 0) {
-            return (float)(getPrice() + getService().getPrice() - getTaxes());
-        }
-        else{
-            return -1;
-        }
+        if(getService() != null)
+            if(getPrice()+getService().getPrice()+getTaxes() >= 0) {
+                return (float)(getPrice() + getService().getPrice() + getTaxes());
+            }
+        return -1;
     }
 
     public String getContact(){
-        return (
+        if((getOwner() != null) && (getLocation()!= null))
+            return (
                 "Contact name: " + getOwner().getFullName() +
                 "\nAddress: " + getLocation().getFullAddress() +
                 "\nContact phone: " + getOwner().getPhone() + ", " + getLocation().getPhone()
                 );
+        return "Not enough info";
     }
 
     public String getInfo(Client client){
         String result = "";
+        String currency = "$";
+
         result =    "Company: " + getCompanyName() +
                     "\nPerson: "+ client.getFullName() +
                     "\n\nLocation: " + getLocation().getName() +
@@ -268,9 +248,102 @@ public class Tour {
         else{
             result+="No";
         }
-        result+="\nPrice: " + getPrice() +" + " + getService().getPrice()+ "for service"+
-                "\nTaxes: " + getTaxes()+
-                "\nTotal: " + calcPrice();
+        result+="\nPrice: " + getPrice() + currency + " + " + getService().getPrice() + currency + " for service "+
+                "\nTaxes: " + getTaxes() + currency +
+                "\nTotal: " + calcPrice() + currency;
         return result;
+    }
+
+
+    public static final class Builder {
+        private String companyName = null;
+        private float price;
+        private float taxes;
+        private Worker owner;
+        private Service service;
+        private Location location;
+        private String transport;
+        private Boolean visa_service;
+        private Boolean accommodation;
+        private String accommodation_type;
+        private Boolean food;
+        private String food_type;
+        private Boolean excursion;
+
+        public Builder() {
+        }
+
+        public static Builder aTour() {
+            return new Builder();
+        }
+
+        public Builder setCompanyName(String companyName) {
+            this.companyName = companyName;
+            return this;
+        }
+
+        public Builder setPrice(float price) {
+            this.price = price;
+            return this;
+        }
+
+        public Builder setTaxes(float taxes) {
+            this.taxes = taxes;
+            return this;
+        }
+
+        public Builder setOwner(Worker owner) {
+            this.owner = owner;
+            return this;
+        }
+
+        public Builder setService(Service service) {
+            this.service = service;
+            return this;
+        }
+
+        public Builder setLocation(Location location) {
+            this.location = location;
+            return this;
+        }
+
+        public Builder setTransport(String transport) {
+            this.transport = transport;
+            return this;
+        }
+
+        public Builder setVisa_service(Boolean visa_service) {
+            this.visa_service = visa_service;
+            return this;
+        }
+
+        public Builder setAccommodation(Boolean accommodation) {
+            this.accommodation = accommodation;
+            return this;
+        }
+
+        public Builder setAccommodation_type(String accommodation_type) {
+            this.accommodation_type = accommodation_type;
+            return this;
+        }
+
+        public Builder setFood(Boolean food) {
+            this.food = food;
+            return this;
+        }
+
+        public Builder setFood_type(String food_type) {
+            this.food_type = food_type;
+            return this;
+        }
+
+        public Builder setExcursion(Boolean excursion) {
+            this.excursion = excursion;
+            return this;
+        }
+
+        public Tour build() {
+            return new Tour(companyName, price, taxes, owner, service, location, transport, visa_service, accommodation, accommodation_type, food, food_type, excursion);
+        }
     }
 }

@@ -8,33 +8,33 @@ public class Worker {
     /**
      * First name of Worker
      * */
-    private static String fName;
+    private String fName;
     /**
      * Last name of Worker
      * */
-    private static String lName;
+    private String lName;
     /**
      * Birth date of Worker
      * */
-    private static LocalDate bDay;
+    private LocalDate bDay;
 
     /**
      * Information about Worker Salary
      * */
-    private static float salary;
+    private float salary;
     /**
      * Information about Worker Position
      * */
-    private static String position;
+    private String position;
 
     /**
      * Information about Worker Address
      * */
-    private static  String address;
+    private  String address;
     /**
      * Information about Worker Phone
      * */
-    private static  String phone;
+    private  String phone;
 
     /**
      * Basic constructor of Worker object
@@ -49,6 +49,16 @@ public class Worker {
 
         address = "Test Hometown";
         phone = "+38(05)08-83-4011";
+    }
+
+    public Worker(String fName, String lName, LocalDate bDay, float salary, String position, String address, String phone) {
+        this.fName = fName;
+        this.lName = lName;
+        this.bDay = bDay;
+        this.salary = salary;
+        this.position = position;
+        this.address = address;
+        this.phone = phone;
     }
 
     /**
@@ -76,20 +86,6 @@ public class Worker {
     public String getPhone(){
         return phone;
     }
-
-    public void setSalary(float Salary){
-        salary = Salary;
-    }
-    public void setPosition(String Position){
-        position = Position;
-    }
-    public void setAddress(String Address){
-        address = Address;
-    }
-    public  void setPhone(String Phone){
-        phone = Phone;
-    }
-
 
 
     public int getYear(){
@@ -127,5 +123,61 @@ public class Worker {
     }
     public String getFullName(){
         return (getFirstName() + " " + getLastName());
+    }
+
+    public static final class Builder {
+        private String fName;
+        private String lName;
+        private LocalDate bDay;
+        private float salary;
+        private String position;
+        private  String address;
+        private  String phone;
+
+        public Builder() {
+        }
+
+        public static Builder aWorker() {
+            return new Builder();
+        }
+
+        public Builder setFName(String fName) {
+            this.fName = fName;
+            return this;
+        }
+
+        public Builder setLName(String lName) {
+            this.lName = lName;
+            return this;
+        }
+
+        public Builder setBDay(LocalDate bDay) {
+            this.bDay = bDay;
+            return this;
+        }
+
+        public Builder setSalary(float salary) {
+            this.salary = salary;
+            return this;
+        }
+
+        public Builder setPosition(String position) {
+            this.position = position;
+            return this;
+        }
+
+        public Builder setAddress(String address) {
+            this.address = address;
+            return this;
+        }
+
+        public Builder setPhone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+
+        public Worker build() {
+            return new Worker(fName, lName, bDay, salary, position, address, phone);
+        }
     }
 }

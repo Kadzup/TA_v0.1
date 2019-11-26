@@ -6,12 +6,12 @@ import java.lang.*;
 import java.util.*;
 
 public class Location {
-    private static Country country;
-    private static String name;
-    private static float rating;
-    private static String address;
-    private static String phone;
-    private static Boolean available;
+    private Country country;
+    private String name;
+    private float rating;
+    private String address;
+    private String phone;
+    private Boolean available;
 
     Location(){
         country = new Country();
@@ -20,6 +20,15 @@ public class Location {
         address = "new street";
         phone = "+380-50-00-0000";
         available = false;
+    }
+
+    public Location(Country country, String name, float rating, String address, String phone, Boolean available) {
+        this.country = country;
+        this.name = name;
+        this.rating = rating;
+        this.address = address;
+        this.phone = phone;
+        this.available = available;
     }
 
     /**
@@ -45,24 +54,6 @@ public class Location {
         return available;
     }
 
-    public void setCountry(Country _Country){
-        country = _Country;
-    }
-    public void setName(String Name){
-        name = Name;
-    }
-    public void setRating(float Rating){
-        rating = Rating;
-    }
-    public void setAddress(String Address){
-        address = Address;
-    }
-    public void  setPhone(String Phone){
-        phone = Phone;
-    }
-    public void setAvailable(Boolean Available){
-        available = Available;
-    }
 
 
     public String getLocation(){
@@ -81,4 +72,53 @@ public class Location {
                 );
     }
 
+    public static final class Builder {
+        private Country country;
+        private String name;
+        private float rating;
+        private String address;
+        private String phone;
+        private Boolean available;
+
+        public Builder() {
+        }
+
+        public static Builder aLocation() {
+            return new Builder();
+        }
+
+        public Builder setCountry(Country country) {
+            this.country = country;
+            return this;
+        }
+
+        public Builder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder setRating(float rating) {
+            this.rating = rating;
+            return this;
+        }
+
+        public Builder setAddress(String address) {
+            this.address = address;
+            return this;
+        }
+
+        public Builder setPhone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+
+        public Builder setAvailable(Boolean available) {
+            this.available = available;
+            return this;
+        }
+
+        public Location build() {
+            return new Location(country, name, rating, address, phone, available);
+        }
+    }
 }
