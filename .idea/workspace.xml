@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3b2d4b-ac73-4aac-8ed8-10733ce18e58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/TestsTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da9295bf-0158-4b56-b7bf-2f0081448361.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/da9295bf-0158-4b56-b7bf-2f0081448361.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/TestCountry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TA_v0.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TA_v0.1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/TestsTour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/TestsTour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Tour$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Tour$Builder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TA_v0.1/model/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TA_v0.1/model/Worker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/TestsTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/TestsTour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Worker.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,29 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Interface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/TestsTour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Tour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+            <state relative-caret-position="238">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="62" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -120,8 +86,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Country.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+            <state relative-caret-position="153">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/TestCountry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -194,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/model/Tour_test.java" />
         <option value="$PROJECT_DIR$/src/model/Tour.java" />
         <option value="$PROJECT_DIR$/src/model/TestsTour.java" />
+        <option value="$PROJECT_DIR$/src/model/TestCountry.java" />
       </list>
     </option>
   </component>
@@ -318,8 +294,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestsTour.calcPrice">
-    <configuration name="TestsTour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestCountry.getCountry">
+    <configuration name="TestCountry.getCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TA_v0.1" />
       <extension name="coverage">
         <pattern>
@@ -328,8 +304,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.TestsTour" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="model.TestCountry" />
+      <option name="METHOD_NAME" value="getCountry" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCountry.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TA_v0.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.TestCountry" />
+      <option name="METHOD_NAME" value="getInfo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -366,7 +359,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestsTour.isNullLinks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsTour.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TA_v0.1" />
       <extension name="coverage">
         <pattern>
@@ -376,34 +369,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.TestsTour" />
-      <option name="METHOD_NAME" value="isNullLinks" />
+      <option name="METHOD_NAME" value="getInfo" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tour_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TA_v0.1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.Tour_test" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCountry.getCountry" />
+        <item itemvalue="JUnit.TestCountry.getInfo" />
+        <item itemvalue="JUnit.TestsTour.getInfo" />
         <item itemvalue="JUnit.TestsTour.calcPrice" />
         <item itemvalue="JUnit.TestsTour.getContact" />
-        <item itemvalue="JUnit.TestsTour" />
-        <item itemvalue="JUnit.TestsTour.isNullLinks" />
-        <item itemvalue="JUnit.Tour_test" />
       </list>
     </recent_temporary>
   </component>
@@ -428,44 +406,44 @@
       <workItem from="1574524020388" duration="5357000" />
       <workItem from="1574598330045" duration="7944000" />
       <workItem from="1574714889928" duration="3333000" />
-      <workItem from="1574718258590" duration="10302000" />
+      <workItem from="1574718258590" duration="14633000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 41m 47s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 06m 57s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 42m 07s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 09m 00s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 42m 19s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 10m 30s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 42m 33s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 15m 51s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour - 2019.11.26 at 23h 42m 44s.xml">
-      <configuration name="TestsTour" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 18m 09s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 44m 40s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestsTour_getInfo - 2019.11.27 at 22h 18m 14s.xml">
+      <configuration name="TestsTour.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 47m 46s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestCountry_getInfo - 2019.11.27 at 22h 27m 59s.xml">
+      <configuration name="TestCountry.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 47m 47s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestCountry_getInfo - 2019.11.27 at 22h 28m 01s.xml">
+      <configuration name="TestCountry.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_getContact - 2019.11.26 at 23h 48m 05s.xml">
-      <configuration name="TestsTour.getContact" configurationId="JUnit" />
+    <history-entry file="TestCountry_getInfo - 2019.11.27 at 22h 29m 28s.xml">
+      <configuration name="TestCountry.getInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestsTour_calcPrice - 2019.11.26 at 23h 49m 46s.xml">
-      <configuration name="TestsTour.calcPrice" configurationId="JUnit" />
+    <history-entry file="TestCountry_getCountry - 2019.11.27 at 22h 29m 33s.xml">
+      <configuration name="TestCountry.getCountry" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26936000" />
+    <option name="totallyTimeSpent" value="31267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,6 +525,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/TestsTour.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/TestsTour.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/TA_v0.1/com/sourcesTours/Help.class" />
@@ -665,41 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Interface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -718,27 +679,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.6.0-M1/junit-platform-commons-1.6.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/model/Tour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
+        <state relative-caret-position="-4">
+          <caret line="231" column="16" lean-forward="true" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Tour.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.6.0-M1/junit-platform-commons-1.6.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TestsTour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="406">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/TestCountry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

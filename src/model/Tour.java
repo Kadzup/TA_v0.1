@@ -211,47 +211,48 @@ public class Tour {
     }
 
     public String getInfo(Client client){
-        String result = "";
-        String currency = "$";
+        if(client != null ) {
+            if (getService() != null || getLocation() != null) {
+                String result = "";
+                String currency = "$";
 
-        result =    "Company: " + getCompanyName() +
-                    "\nPerson: "+ client.getFullName() +
-                    "\n\nLocation: " + getLocation().getName() +
-                    "\nAddress: " + getLocation().getFullAddress() +
-                    "\nTransport: " + getTransport() +
-                    "\nFood: ";
-        if(getFood()){
-            result += "Yes, " + getFood_type();
+                result = "Company: " + getCompanyName() +
+                        "\nPerson: " + client.getFullName() +
+                        "\n\nLocation: " + getLocation().getName() +
+                        "\nAddress: " + getLocation().getFullAddress() +
+                        "\nTransport: " + getTransport() +
+                        "\nFood: ";
+                if (getFood()) {
+                    result += "Yes, " + getFood_type();
+                } else {
+                    result += "No";
+                }
+                result += "\nAccommodation: ";
+                if (getAccommodation()) {
+                    result += "Yes, " + getAccommodation_type();
+                } else {
+                    result += "No";
+                }
+                result += "\nExcursion: ";
+                if (getExcursion()) {
+                    result += "Yes";
+                } else {
+                    result += "No";
+                }
+                result += "\n\nAdditional service: " + getService().getName() +
+                        "\n\nVisa services: ";
+                if (getVisa_service()) {
+                    result += "Yes";
+                } else {
+                    result += "No";
+                }
+                result += "\nPrice: " + getPrice() + currency + " + " + getService().getPrice() + currency + " for service " +
+                        "\nTaxes: " + getTaxes() + currency +
+                        "\nTotal: " + calcPrice() + currency;
+                return result;
+            }
         }
-        else{
-            result += "No";
-        }
-        result += "\nAccommodation: ";
-        if(getAccommodation()){
-            result+= "Yes, "+ getAccommodation_type();
-        }
-        else{
-            result += "No";
-        }
-        result += "\nExcursion: ";
-        if(getExcursion()){
-            result += "Yes";
-        }
-        else {
-            result += "No";
-        }
-        result+="\n\nAdditional service: " + getService().getName()+
-                "\n\nVisa services: ";
-        if(getVisa_service()){
-            result+="Yes";
-        }
-        else{
-            result+="No";
-        }
-        result+="\nPrice: " + getPrice() + currency + " + " + getService().getPrice() + currency + " for service "+
-                "\nTaxes: " + getTaxes() + currency +
-                "\nTotal: " + calcPrice() + currency;
-        return result;
+        return "Not enough info";
     }
 
 
