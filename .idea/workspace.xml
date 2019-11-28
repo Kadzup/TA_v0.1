@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae3b2d4b-ac73-4aac-8ed8-10733ce18e58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/TestsWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ae3b2d4b-ac73-4aac-8ed8-10733ce18e58" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/TestsWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="187">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="method#getInfo#0;class#TestsWorker#0" />
               </folding>
@@ -388,7 +385,7 @@
       <workItem from="1574598330045" duration="7944000" />
       <workItem from="1574714889928" duration="3333000" />
       <workItem from="1574718258590" duration="15532000" />
-      <workItem from="1574970457335" duration="1420000" />
+      <workItem from="1574970457335" duration="1495000" />
     </task>
     <servers />
   </component>
@@ -425,7 +422,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33586000" />
+    <option name="totallyTimeSpent" value="33661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TestsWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="187">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="method#getInfo#0;class#TestsWorker#0" />
           </folding>
